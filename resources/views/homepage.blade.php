@@ -136,7 +136,10 @@
             </div>
 
             <div class="w-50 pl-5 pr-5 ">
-                <form action="#" method="post">
+
+                <form action="{{ route('form') }}" method="post">
+                    @csrf
+                    
                     <input class="mb-3 p-2 w-100" type="text" id="name" name="name" placeholder="Nome" required> <br>
                     
                     <input class="mb-3 w-100 p-2" type="email" id="email" name="email" placeholder="Email" required> <br>
