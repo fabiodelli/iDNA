@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FormController;
+use App\Http\Controllers\SliderController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -19,3 +21,7 @@ Route::get('/', function () {
 });
 
 Route::post('/', [FormController::class, 'salvaDati'])->name('form');
+
+Route::get('/sliders', [SliderController::class, 'index']);
+
+

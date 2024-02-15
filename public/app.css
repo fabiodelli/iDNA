@@ -63,3 +63,27 @@
   z-index: -10;
 }
 
+
+/* Slider-------------------------- */
+
+.slider-navigation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 50%);
+    display: flex;
+    gap: 10px; /* Distanza tra i pulsanti */
+}
+
+.btn-warning {
+    color: #000; /* Colore del testo */
+    background-color: #ffc107; /* Colore di sfondo giallo */
+    border-color: #ffc107; /* Colore del bordo */
+}
+
+.btn-warning:hover {
+    color: #000; /* Colore del testo al hover */
+    background-color: #e0a800; /* Colore di sfondo al hover */
+    border-color: #d39e00; /* Colore del bordo al hover */
+}
+
