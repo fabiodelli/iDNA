@@ -1,53 +1,53 @@
-
-
-/* tab */
-
 document.addEventListener('DOMContentLoaded', function () {
-    const tabs = document.querySelectorAll('.tab-link');
-    const contents = document.querySelectorAll('.tab-content');
+    // Configurazione iniziale delle tab per ciascuno slider
+    const sliders = document.querySelectorAll('.slider_container .w-50.p-5');
+    sliders.forEach(slider => setupTabs(slider));
 
-    tabs.forEach(tab => {
-        tab.addEventListener('click', function () {
-            let target = this.getAttribute('data-target');
-
-            // Rimuovi 'active' da tutti i tabs e contenuti
-            tabs.forEach(t => { t.classList.remove('active'); });
-            contents.forEach(c => { c.style.display = 'none'; });
-
-            // Aggiungi 'active' al tab cliccato e mostra il contenuto corrispondente
-            this.classList.add('active');
-            document.getElementById(target).style.display = 'block';
-        });
+    // Nascondi tutti gli slider tranne il primo
+    sliders.forEach((slider, index) => {
+        slider.style.display = index === 0 ? 'block' : 'none';
     });
-});
 
-
-/* pulsanti */
-
-document.addEventListener('DOMContentLoaded', function () {
+    // Logica per mostrare lo slider specifico
     const prevButton = document.querySelector('.slide-prev');
     const nextButton = document.querySelector('.slide-next');
+    let currentSliderIndex = 0; // Indice dello slider attuale
 
-    let currentSlideIndex = 0; // Indice della slide attuale
-    const slides = document.querySelectorAll('.slider_container > div'); // Seleziona le slide
-
-    function showSlide(index) {
-        // Nascondi tutte le slide
-        slides.forEach(slide => slide.style.display = 'none');
-        // Mostra la slide corrente
-        slides[index].style.display = 'block';
+    function showSlider(index) {
+        sliders.forEach((slider, i) => {
+            slider.style.display = i === index ? 'block' : 'none';
+        });
     }
 
     prevButton.addEventListener('click', function () {
-        currentSlideIndex = (currentSlideIndex > 0) ? currentSlideIndex - 1 : slides.length - 1;
-        showSlide(currentSlideIndex);
+        currentSliderIndex = currentSliderIndex > 0 ? currentSliderIndex - 1 : sliders.length - 1;
+        showSlider(currentSliderIndex);
     });
 
     nextButton.addEventListener('click', function () {
-        currentSlideIndex = (currentSlideIndex < slides.length - 1) ? currentSlideIndex + 1 : 0;
-        showSlide(currentSlideIndex);
+        currentSliderIndex = currentSliderIndex < sliders.length - 1 ? currentSliderIndex + 1 : 0;
+        showSlider(currentSliderIndex);
     });
 
-    // Mostra la prima slide all'inizio
-    showSlide(currentSlideIndex);
+    function setupTabs(slider) {
+        const tabs = slider.querySelectorAll('.tab-link');
+        const contents = slider.querySelectorAll('.tab-content');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', function () {
+                const target = this.getAttribute('data-target');
+
+                tabs.forEach(t => { t.classList.remove('active'); });
+                contents.forEach(c => { c.style.display = 'none'; });
+
+                this.classList.add('active');
+                slider.querySelector(`#${target}`).style.display = 'block';
+            });
+        });
+
+        // Attiva la prima tab di ogni slider
+        if (tabs.length > 0) {
+            tabs[0].click();
+        }
+    }
 });

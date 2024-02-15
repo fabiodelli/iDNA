@@ -16,7 +16,7 @@
 
     @include('partials.jumbo')
 
-    @include('partials.slider')
+    @include('partials.slider', ['sliders' => $sliders])
 
     <img src="images/photo.png" class="img-fluid background-middle" alt="">
     

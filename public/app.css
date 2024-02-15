@@ -68,9 +68,9 @@
 
 .slider-navigation {
     position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 50%);
+    top: 5%;
+    right: -10%;
+
     display: flex;
     gap: 10px; /* Distanza tra i pulsanti */
 }

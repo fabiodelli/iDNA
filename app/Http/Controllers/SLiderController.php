@@ -13,7 +13,7 @@ class SliderController extends Controller
         $sliders = Slider::with('images')->get();
 
         // Passa gli slider alla vista
-        return view('sliders.index', compact('sliders'));
+        return view('hopmepage.', compact('sliders'));
     }
 }
 
