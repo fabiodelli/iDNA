@@ -18,8 +18,6 @@
 
     @include('partials.slider')
 
-    @include('partials.middle')
-
     <img src="images/photo.png" class="img-fluid background-middle" alt="">
     
     @include('partials.middle')
@@ -27,8 +25,6 @@
     @include('partials.bottom')
 
     @include('partials.footer')
-
-    <script src="{{ asset('Youtube.js') }}"></script>
 
 </body>
 
