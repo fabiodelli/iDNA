@@ -4,14 +4,22 @@
             <button class="slide-prev btn btn-warning">&#10094;</button>
             <button class="slide-next btn btn-warning">&#10095;</button>
         </div>
-        <div class="d-flex align-items-center w-50">
-            <div class="corner"></div>
-            <img class="z_20 position-relative" src="images/board.png" alt="">
-        </div>
+
+        <div class="corner"></div>
 
         @foreach ($sliders as $index => $slider)
-            <div class="w-50 p-5">
-                <h4>{{ $slider->title }}</h4>
+            <div class="slider_inner">
+                {{-- Controllo se $slider->images->first() esiste e in caso contrario fornisco un percorso di immagine di fallback --}}
+                @php
+                    $firstImage = $slider->images->first();
+                    $imagePath = $firstImage ? $firstImage->image_path : 'percorso/immagine/predefinita.jpg'; // Sostituire 'percorso/immagine/predefinita.jpg' con il percorso dell'immagine di fallback
+                @endphp
+
+                <div>
+                    <img class="z_20 position-relative" src="{{ $imagePath }}" alt="">
+                </div>
+                <div>
+                    <h4>{{ $slider->title }}</h4>
                 <div class="stars">{{ $slider->rating }}</div>
 
                 <div class="info mt-5 mb-5">
@@ -34,9 +42,9 @@
                     <span class="btn-info">BUY NOW</span>
                 </div>
                 <a class="mt-5" href="">View all boards</a>
+                </div>           
             </div>
         @endforeach
-
     </div>
 </div>
 
