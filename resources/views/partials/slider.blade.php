@@ -15,18 +15,26 @@
                     $imagePath = $firstImage ? $firstImage->image_path : 'percorso/immagine/predefinita.jpg'; // Sostituire 'percorso/immagine/predefinita.jpg' con il percorso dell'immagine di fallback
                 @endphp
 
-                <div>
+                <div class="w-50">
                     <img class="z_20 position-relative" src="{{ $imagePath }}" alt="">
                 </div>
-                <div>
+                <div class="w-50">
                     <h4>{{ $slider->title }}</h4>
-                <div class="stars">{{ $slider->rating }}</div>
+                    <div class="stars">
+                        @for ($i = 0; $i < 5; $i++)
+                            @if ($i < $slider->rating)
+                                <span class="fa fa-star stars"></span> {{-- Stelle piene per il rating --}}
+                            @else
+                                <span class="fa fa-star no_stars"></span> {{-- Stelle vuote per il rating --}}
+                            @endif
+                        @endfor
+                    </div>
 
                 <div class="info mt-5 mb-5">
-                    <div class="info_type w-100 d-flex justify-content-between">
-                        <span class="tab-link" data-target="description{{ $index }}">Description</span>
-                        <span class="tab-link" data-target="features{{ $index }}">Features</span>
-                        <span class="tab-link" data-target="dimension{{ $index }}">Dimension</span>
+                    <div class="info_type d-flex justify-content-start mb-3">
+                        <span class="tab-link mr-4" data-target="description{{ $index }}">Description</span>
+                        <span class="tab-link mr-4" data-target="features{{ $index }}">Features</span>
+                        <span class="tab-link mr-4" data-target="dimension{{ $index }}">Dimension</span>
                     </div>
 
                     <div class="tab-content" id="description{{ $index }}" style="display:block;">
