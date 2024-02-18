@@ -4,19 +4,23 @@
 
         <div class="w-50 d-flex flex-column align-items-center">
 
-
             <img class="w-100" src="images/bottom-img.png" alt="">
-            <div class="bg-white w-100 p-3">
+
+            <div class="bg-white w-100 d-flex align-items-center p-3">
+
                 <span class="pe-2">
                     <img src="images/instagram.png" alt="">
                 </span>
-                <span class="fs-1 text-info">Follow Us</span>
+
+                <span class="fs-4 text-info me-2">Follow Us</span>
+
                 <span>@Surfersco</span>
+
             </div>
 
         </div>
 
-        <div class="w-50 pl-5 pr-5 ">
+        <div class="w-50 ps-5 ">
 
             <form id="formDati">
                 @csrf
