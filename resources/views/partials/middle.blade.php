@@ -1,4 +1,10 @@
+<img src="images/photo.png" class="img-fluid background-middle" alt="">
+
+
+
 <div class="container-fluid d-flex justify-content-around">
+
+    <div class="about_us">ABOUT US</div>
 
     <div class="middle_container d-flex justify-content-around">
 

@@ -1,12 +1,32 @@
+/* utility-------------------------- */
 
 .img-fluid {
     z-index: -10;
+    width: 100%;
 }
 
-.background-middle {
-    position: absolute;
-    top: 200%;
+.z_20 {
+    z-index: 20;
 }
+
+/* top------------------------------ */
+
+.header{
+position: absolute;
+top: 0;
+left: 0;
+}
+
+.top-img{
+    top: -48px;
+}
+
+.jumbo-text{
+    position: absolute;
+    top: 100px;
+}
+
+/* middle-------------------------- */
 
 .middle_container {
     position: absolute;
@@ -14,9 +34,24 @@
     height: 480px;
 }
 
+.about_us{
+    font-size: 150px;
+    position: absolute;
+    top: 177%;
+    color: #f1f1f1;
+    z-index: -20;
+}
+
+.background-middle {
+    position: absolute;
+    top: 200%;
+}
+
 .video {
     margin-left: 5rem;
 }
+
+/* bottom-------------------------- */
 
 .bottom_container {
     position: absolute;
@@ -25,6 +60,7 @@
     width: 90%;
 }
 
+/* footer-------------------------- */
 
 .footer {
   background-color: rgb(0, 0, 0);
@@ -41,7 +77,7 @@
 .slider-navigation {
     position: absolute;
     top: 5%;
-    right: -10%;
+    right: -3%;
     display: flex;
     gap: 10px; /* Distanza tra i pulsanti */
 }
@@ -61,7 +97,7 @@
 .slider_container {
     background: white;
     position: absolute;
-    left: 185px;
+    left: 50%-500px;
     top: 436px;
     width: 1000px;
     height: 601px;
@@ -86,16 +122,12 @@
     z-index: 10;
 }
 
-.z_20 {
-    z-index: 20;
-}
 
 .secondary_images{
     border: 5px solid cornflowerblue;
     width: 75%;
     aspect-ratio: 1;
 }
-
 
 
 
