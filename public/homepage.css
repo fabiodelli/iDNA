@@ -1,9 +1,9 @@
 /* font------------------------------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
-@import url('https://fonts.google.com/specimen/Montserrat?query=montserrat&selection.family=Montserrat:400,700');
-@import url('https://fonts.google.com/specimen/Playfair+Display?category=Serif&selection.family=Playfair+Display:400,400i');
-@import url('https://fonts.google.com/specimen/Roboto+Condensed?selection.family=Roboto+Condensed:700');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap");
+@import url("https://fonts.google.com/specimen/Montserrat?query=montserrat&selection.family=Montserrat:400,700");
+@import url("https://fonts.google.com/specimen/Playfair+Display?category=Serif&selection.family=Playfair+Display:400,400i");
+@import url("https://fonts.google.com/specimen/Roboto+Condensed?selection.family=Roboto+Condensed:700");
 
 /* utility-------------------------- */
 
@@ -16,24 +16,24 @@
     z-index: 20;
 }
 
-.w_60{
-    width:60%;
+.w_60 {
+    width: 60%;
 }
 
-.w_40{
-    width:40%;
+.w_40 {
+    width: 40%;
 }
 
 /* header------------------------------ */
 
-.header{
-position: absolute;
-top: 3%;
-left: 0;
-font-family: 'Roboto Condensed', sans-serif;
+.header {
+    position: absolute;
+    top: 3%;
+    left: 0;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
-.icon{
+.icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,23 +46,23 @@ font-family: 'Roboto Condensed', sans-serif;
 
 /* top------------------------------ */
 
-.top-img{
+.top-img {
     top: -48px;
 }
 
-.jumbo-text{
+.jumbo-text {
     position: absolute;
     top: 20%;
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     font-style: italic;
 }
 
-.slogan_up{
+.slogan_up {
     font-size: 45px;
 }
 
-.slogan_bt{
-    font-size: 20px;   
+.slogan_bt {
+    font-size: 20px;
 }
 
 /* middle-------------------------- */
@@ -73,7 +73,7 @@ font-family: 'Roboto Condensed', sans-serif;
     height: 480px;
 }
 
-.about_us{
+.about_us {
     font-size: 150px;
     position: absolute;
     top: 177%;
@@ -86,8 +86,8 @@ font-family: 'Roboto Condensed', sans-serif;
     top: 200%;
 }
 
-.text_middle{
-    font-family: 'Playfair Display', serif;
+.text_middle {
+    font-family: "Playfair Display", serif;
     font-style: italic;
     font-size: 20px;
 }
@@ -108,14 +108,13 @@ font-family: 'Roboto Condensed', sans-serif;
 /* footer-------------------------- */
 
 .footer {
-  background-color: rgb(0, 0, 0);
-  position: absolute;
-  top: 408%;
-  width: 100%;
-  height: 420px;
-  z-index: -10;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 408%;
+    width: 100%;
+    height: 420px;
+    z-index: -10;
 }
-
 
 /* Slider-------------------------- */
 
@@ -149,11 +148,11 @@ font-family: 'Roboto Condensed', sans-serif;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
-.slider_inner{
-  padding: 2rem;
-  width: 100%;
-  justify-content: space-between;
-  font-family: 'Roboto Condensed', sans-serif;
+.slider_inner {
+    padding: 2rem;
+    width: 100%;
+    justify-content: space-between;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 .corner {
@@ -172,46 +171,50 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .no_star {
-    color: rgb(255, 255, 255);
+    color: rgb(228, 228, 228);
 }
 
-.info_type{
+.info_type {
     border-bottom: 1px solid;
     border-bottom-color: rgb(201, 201, 201);
 }
 
-.tab-content{
+.tab-content {
     height: 200px;
 }
 
-.tab-link{
+.tab-link {
     margin-right: 20px;
     font-weight: semi-bold;
     color: rgb(201, 201, 201);
 }
 
-.active-tab-link{
-    color: rgb(0, 0, 0);
-    border-bottom: 3px solid;
-    border-bottom-color:cornflowerblue;
+.tab-link:hover{
+    cursor: pointer;
 }
 
-.main-image{
+.active-tab-link {
+    color: rgb(0, 0, 0);
+    border-bottom: 3px solid;
+    border-bottom-color: cornflowerblue;
+}
+
+.main-image {
     width: 500px;
 }
 
-.secondary_images{
+.secondary_images {
     border: 3px solid rgb(211, 211, 211);
     width: 65px;
     aspect-ratio: 1;
     margin: 2px;
 }
 
-.active_image{
+.active_image {
     border: 3px solid cornflowerblue;
 }
 
-.id_counter{
+.id_counter {
     position: absolute;
     top: 15%;
     right: 0%;
@@ -220,6 +223,20 @@ font-family: 'Roboto Condensed', sans-serif;
     padding: 0.5rem 1rem;
 }
 
+/* form validation----------------- */
 
+.error-tooltip {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    margin-top: -5px;
+}
 
-
+input.error + .error-tooltip {
+    display: block;
+}

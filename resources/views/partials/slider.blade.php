@@ -22,15 +22,16 @@
                 <!-- Contenitore per l'immagine principale e le immagini secondarie -->
                 <div class="w_60 d-flex">
                     <!-- Immagine principale dello slider -->
-                    <div class="w-75 h-100 d-flex align-items-center"> 
+                    <div class="w-75 h-100 d-flex align-items-center">
                         <img class="main-image z_20 position-relative" src="{{ $imagePath }}" alt="">
                     </div>
                     <div class="w-25 d-flex flex-column justify-content-center align-items-center">
                         <!-- Mostra le immagini secondarie escludendo la prima -->
                         @foreach ($slider->images as $image)
-                        <div class="secondary_images">
-                            <img src="{{ asset($image->image_path) }}" alt="" class="secondary-image" style="width: 100%; object-fit: cover; cursor: pointer;">
-                        </div>
+                            <div class="secondary_images">
+                                <img src="{{ asset($image->image_path) }}" alt="" class="secondary-image"
+                                    style="width: 100%; object-fit: cover; cursor: pointer;">
+                            </div>
                         @endforeach
                     </div>
                     <!-- Contenitore per le immagini secondarie -->
@@ -69,14 +70,15 @@
                         </div>
                         <!-- Prezzo e bottone per l'acquisto -->
                         <span class="price fw-bold fs-4 me-5">$ {{ $slider->price }}</span>
-                        <span class="bg-info text-white fw-bold p-3 px-4">BUY NOW</span>
+
+                        <a class="bg-info text-white text-decoration-none fw-bold p-3 px-4" href="">BUY NOW</a>
 
                         <div class="id_counter">{{ $slider->id }}/{{ $sliders->last()->id }}</div>
 
                     </div>
                     <!-- Link per visualizzare tutti gli slider -->
                     <a class="mt-5" href="">View all boards</a>
-                </div>           
+                </div>
             </div>
         @endforeach
     </div>
