@@ -48,6 +48,9 @@
                                 <span class="fa fa-star no_star"></span> <!-- Stelle vuote per il rating -->
                             @endif
                         @endfor
+
+                        <span class="ms-1">({{ $slider->rating }})</span>
+
                     </div>
 
                     <!-- Informazioni addizionali con tab per descrizione, caratteristiche e dimensioni -->

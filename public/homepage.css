@@ -42,6 +42,17 @@
     aspect-ratio: 1;
     border-radius: 50%;
     margin-right: 10px;
+    text-decoration: none;
+}
+
+.nav_link{
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.nav_link:hover{
+    cursor: pointer;
 }
 
 /* top------------------------------ */
