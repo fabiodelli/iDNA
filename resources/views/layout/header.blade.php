@@ -1,30 +1,48 @@
 
-
-<nav class=" w-100 p-3 z_20 header ">
-
-    <div class="container d-flex justify-content-between align-items-center mb-5">
-
-        <div class="fs-2 fw-bold">Surfers Co.</div>
-
-        <div class="w-50 d-flex justify-content-around fw-bold">
-
-            <a class="bg-info text-white nav_link">BOARDS</a>
-            <a class="nav_link">ACCESSORIES</a>
-            <a class="nav_link">BLOG</a>
-            <a class="nav_link">TECNOLOGY</a>
-            <a class="nav_link">TEAM</a>
-            <a class="nav_link">DEALERS</a>
-
+<nav class="navbar navbar-expand-lg navbar position-absolute w-100 header-mobile">
+    <div class="container">
+        <h1 class="navbar-brand" href="#">Surfers Co.</h1>
+        <!-- Toggle del burger menu -->
+        <button class="navbar-toggler" id="button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+        </button>
+        <!-- Contenuto del menu -->
+        <div class="collapse navbar-collapse menu" id="navbarNav">
+            <ul class="navbar-nav w-100 d-flex justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link fw-bold" href="#">BOARDS</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link fw-bold" href="#">ACCESSORIES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold" href="#">BLOG</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold" href="#">TECHNOLOGY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold" href="#">TEAM</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold" href="#">DEALERS</a>
+                </li>
+            </ul>
+            <div class="navbar-text d-flex justify-content-center">
+                <a class="text-white me-2 icon" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="text-white me-2 icon" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="text-white icon" href="#"><i class="fas fa-envelope"></i></a>
+            </div>
         </div>
-
-        <div class="d-flex justify-content-between align-items-center">
-
-            <a class="icon" href=""><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a>
-            <a class="icon" href=""><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
-            <a class="icon" href=""><i class="fa-solid fa-envelope" style="color: #ffffff;"></i></a>
-
-        </div>
-
     </div>
-
 </nav>
+
+<!-- Includi jQuery e Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+
+<script>
+    
+</script>

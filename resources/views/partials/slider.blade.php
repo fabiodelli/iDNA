@@ -20,12 +20,12 @@
                 @endphp
 
                 <!-- Contenitore per l'immagine principale e le immagini secondarie -->
-                <div class="w_60 d-flex">
+                <div class="w_60 d-flex image_container">
                     <!-- Immagine principale dello slider -->
-                    <div class="w-75 h-100 d-flex align-items-center">
+                    <div class="h-100 d-flex align-items-center image_container">
                         <img class="main-image z_20 position-relative" src="{{ $imagePath }}" alt="">
                     </div>
-                    <div class="w-25 d-flex flex-column justify-content-center align-items-center">
+                    <div class="d-flex justify-content-center align-items-center z_20 images_container">
                         <!-- Mostra le immagini secondarie escludendo la prima -->
                         @foreach ($slider->images as $image)
                             <div class="secondary_images">
@@ -37,7 +37,7 @@
                     <!-- Contenitore per le immagini secondarie -->
                 </div>
                 <!-- Sezione dettagli dello slider (titolo, rating, ecc.) -->
-                <div class="w_40 p-3">
+                <div class="info_container z_20">
                     <h4>{{ $slider->title }}</h4>
                     <!-- Visualizzazione del rating sotto forma di stelle -->
                     <div>
@@ -55,10 +55,10 @@
 
                     <!-- Informazioni addizionali con tab per descrizione, caratteristiche e dimensioni -->
                     <div class="info mt-5 mb-5">
-                        <div class="info_type d-flex justify-content-start mb-3">
-                            <span class="tab-link mr-4" data-target="description{{ $index }}">DESCRIPTION</span>
-                            <span class="tab-link mr-4" data-target="features{{ $index }}">FEATURES</span>
-                            <span class="tab-link mr-4" data-target="dimension{{ $index }}">DIMENSIONS</span>
+                        <div class=" d-flex info_type justify-content-start mb-3">
+                            <span class="tab-link " data-target="description{{ $index }}">DESCRIPTION</span>
+                            <span class="tab-link " data-target="features{{ $index }}">FEATURES</span>
+                            <span class="tab-link " data-target="dimension{{ $index }}">DIMENSIONS</span>
                         </div>
 
                         <!-- Contenuto delle tab -->
@@ -74,7 +74,7 @@
                         <!-- Prezzo e bottone per l'acquisto -->
                         <span class="price fw-bold fs-4 me-5">$ {{ $slider->price }}</span>
 
-                        <a class="bg-info text-white text-decoration-none fw-bold p-3 px-4" href="">BUY NOW</a>
+                        <a class="buy bg-info text-white text-decoration-none fw-bold p-3 px-4" href="">BUY NOW</a>
 
                         <div class="id_counter">{{ $slider->id }}/{{ $sliders->last()->id }}</div>
 

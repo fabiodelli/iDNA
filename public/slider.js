@@ -60,7 +60,7 @@ function setupTabs(slider) {
 
 // Funzione per configurare il click sulle immagini secondarie
 function setupImageSwitch(slider) {
-    const mainImage = slider.querySelector('.w-75 img'); // Seleziona l'immagine principale
+    const mainImage = slider.querySelector('.main-image'); // Seleziona l'immagine principale
     const secondaryImagesContainers = slider.querySelectorAll('.secondary_images'); // Seleziona tutti i <div> che contengono le immagini secondarie
 
     secondaryImagesContainers.forEach(container => {

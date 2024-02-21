@@ -1,4 +1,8 @@
-<img src="images/surfing.png" class="img-fluid top-img " alt="">
+<div class="image-container">
+    <img src="images/surfing.png" class="img-fluid top-img " alt="">
+    <div class="gradient-overlay"></div>
+</div>
+
 
 <div class="w-100 d-flex flex-column align-items-center jumbo-text mt-5 z_20">
 
