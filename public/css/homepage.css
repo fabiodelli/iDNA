@@ -93,14 +93,14 @@
 .about_us {
     font-size: 150px;
     position: absolute;
-    top: 177%;
+    top: 155%;
     color: #f1f1f1;
     z-index: -20;
 }
 
 .background-middle {
     position: absolute;
-    top: 200%;
+    top: 180%;
 }
 
 .middle_left {
@@ -126,6 +126,16 @@
 
 .video {
     margin-left: 5rem;
+}
+
+.contact_us{
+    position: absolute;
+    top: 315%;
+    width: 100%;
+    text-align: center;
+    font-size: 150px;
+    color: #f1f1f1;
+    z-index: -20;
 }
 
 /* bottom-------------------------- */
@@ -326,12 +336,6 @@ input.error + .error-tooltip {
         padding: 1rem;
         border-radius: 10px;
         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .menu {
-        background: rgba(255, 255, 255, 0.95);
-        z-index: 20;
-        padding: 1rem;
         border-radius: 10px;
     }
 
@@ -454,7 +458,6 @@ input.error + .error-tooltip {
         font-size: 50px;
         color: #f1f1f1;
         z-index: -20;
-
     }
     .bottom_container {
         flex-direction: column;
