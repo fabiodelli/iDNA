@@ -34,6 +34,10 @@
     text-decoration: none;
 }
 
+.title{
+    font-size: 30px;
+}
+
 .nav_link {
     padding: 10px;
     text-decoration: none;
@@ -75,7 +79,7 @@
 }
 
 .slogan_up {
-    font-size: 45px;
+    font-size: 50px;
 }
 
 .slogan_bt {
@@ -378,11 +382,10 @@ input.error + .error-tooltip {
         font-size: 10px;
     }
 
-    .price {
-    }
-
     .buy {
         display: block;
+        text-align: center;
+        margin-top: 2rem;
     }
 
     .middle_container {

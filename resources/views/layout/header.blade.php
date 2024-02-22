@@ -1,7 +1,7 @@
 
 <nav class="navbar navbar-expand-lg navbar position-absolute w-100 header-mobile">
     <div class="container">
-        <h1 class="navbar-brand" href="#">Surfers Co.</h1>
+        <h1 class="title navbar-brand" href="#">Surfers Co.</h1>
         <!-- Toggle del burger menu -->
         <button class="navbar-toggler" id="button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -11,22 +11,22 @@
         <div class="collapse navbar-collapse menu" id="navbarNav">
             <ul class="navbar-nav w-100 d-flex justify-content-center">
                 <li class="nav-item">
-                    <a class="nav-link fw-bold" href="#">BOARDS</a>
+                    <a class="nav-link fw-semibold" href="#">BOARDS</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link fw-bold" href="#">ACCESSORIES</a>
+                    <a class="nav-link fw-semibold" href="#">ACCESSORIES</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link fw-bold" href="#">BLOG</a>
+                    <a class="nav-link fw-semibold" href="#">BLOG</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link fw-bold" href="#">TECHNOLOGY</a>
+                    <a class="nav-link fw-semibold" href="#">TECHNOLOGY</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link fw-bold" href="#">TEAM</a>
+                    <a class="nav-link fw-semibold" href="#">TEAM</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link fw-bold" href="#">DEALERS</a>
+                    <a class="nav-link fw-semibold" href="#">DEALERS</a>
                 </li>
             </ul>
             <div class="navbar-text d-flex justify-content-center">
