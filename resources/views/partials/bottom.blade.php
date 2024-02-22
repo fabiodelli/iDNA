@@ -1,8 +1,10 @@
+<div class="contact_us">CONTACT US</div>
+
 <div class="container-fluid d-flex justify-content-around">
 
     <div class="bottom_container d-flex justify-content-evenly">
 
-        <div class="w-50 d-flex flex-column align-items-center">
+        <div class="bottom_left d-flex flex-column align-items-center">
 
             <img class="w-100" src="images/bottom-img.png" alt="">
 
@@ -20,7 +22,7 @@
 
         </div>
 
-        <div class="w-50 ps-5 ">
+        <div class="bottom_right">
 
             <form id="formDati">
                 

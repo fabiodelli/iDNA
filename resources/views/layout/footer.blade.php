@@ -2,7 +2,7 @@
 
     <div class="text-white footer_link">
 
-        <span class="me-5">
+        <span class="me-4">
             <div><i class="fa-solid fa-window-minimize" style="color: #FFD43B;"></i> ABOUT</div>
             <div><i class="fa-solid fa-window-minimize" style="color: #FFD43B;"></i> BOARDS</div>
             <div><i class="fa-solid fa-window-minimize" style="color: #FFD43B;"></i> ACCESSORIES</div>
